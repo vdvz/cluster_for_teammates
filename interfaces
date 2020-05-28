@@ -13,10 +13,15 @@ netmask 255.255.255.0
 network 192.168.197.0
 broadcast 192.168.197.254
 dns-nameservers 192.168.197.130
+
 auto enp0s3:1
 iface enp0s3:1 inet static
-address 192.168.197.11
+address 192.168.197.127
 netmask 255.255.255.0
 network 192.168.197.0
-broadcast 192.168.197.254
-dns-nameservers 192.168.197.130
+
+auto enp0s3:2
+iface enp0s3:2 inet static
+address 192.168.197.126
+netmask 255.255.255.0
+network 192.168.197.0
